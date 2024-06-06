@@ -1,0 +1,114 @@
+{
+  "db": [
+    {
+      "name": "Daily Sales",
+      "series": [
+        {
+          "name": "Mon",
+          "value": 500
+        },
+        {
+          "name": "Tue",
+          "value": 800
+        },
+        {
+          "name": "Wed",
+          "value": 900
+        },
+        {
+          "name": "Thurs",
+          "value": 1000
+        },
+        {
+          "name": "Fri",
+          "value": 1100
+        },
+        {
+          "name": "Sat",
+          "value": 1000
+        },
+        {
+          "name": "Sun",
+          "value": 950
+        }
+      ]
+    }
+  ],
+  "db3": [
+    {
+      "ProductName": "T-Shirt",
+      "Sales Quantity": 800,
+      "Revenue": 12000
+    },
+    {
+      "ProductName": "Saree",
+      "Sales Quantity": 1200,
+      "Revenue": 18000
+    },
+    {
+      "ProductName": "Trouser",
+      "Sales Quantity": 1000,
+      "Revenue": 14000
+    },
+    {
+      "ProductName": "Watch",
+      "Sales Quantity": 500,
+      "Revenue": 10000
+    },
+    {
+      "ProductName": "Ear-Rings",
+      "Sales Quantity": 1300,
+      "Revenue": 15000
+    }
+  ],
+  "db2": [
+    {
+      "name": "January",
+      "value": 30000
+    },
+    {
+      "name": "February",
+      "value": 35000
+    },
+    {
+      "name": "March",
+      "value": 40000
+    },
+    {
+      "name": "April",
+      "value": 45000
+    },
+    {
+      "name": "May",
+      "value": 50000
+    },
+    {
+      "name": "June",
+      "value": 55000
+    },
+    {
+      "name": "July",
+      "value": 60000
+    },
+    {
+      "name": "August",
+      "value": 65000
+    },
+    {
+      "name": "September",
+      "value": 70000
+    },
+    {
+      "name": "Octomber",
+      "value": 75000
+    },
+    {
+      "name": "November",
+      "value": 80000
+    },
+    {
+      "name": "December",
+      "value": 85000
+    }
+  ]
+}

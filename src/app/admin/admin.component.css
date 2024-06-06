@@ -1,0 +1,10 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+mat-card-title{
+    color:crimson;
+}
+p{
+    color:rgb(74, 74, 74)
+}

@@ -1,0 +1,16 @@
+mat-card {
+   
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  table {
+    width: 100%;
+  }
+
+@media(max-width:768px){
+  .d-flex{
+    display: block !important;
+  }
+
+}

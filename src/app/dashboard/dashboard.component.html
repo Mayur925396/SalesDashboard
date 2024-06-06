@@ -1,0 +1,71 @@
+<div class="d-flex justify-content-evenly mt-2">
+  <div class="card">
+    <div class="card-header">Daily Sales (Last Week)</div>
+    <div class="card-body">
+    <ngx-charts-line-chart
+      [view]="view"
+      [results]="dailySalesData"
+      [scheme]="colorScheme"
+      [xAxis]="true"
+      [yAxis]="true"
+      [legend]="true"
+      [showXAxisLabel]="true"
+      [showYAxisLabel]="true"
+      [xAxisLabel]="'Date'"
+      [yAxisLabel]="'Sales'">
+    </ngx-charts-line-chart></div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Monthly Revenue (Current Year)</div>
+    <div class="card-body">
+    <ngx-charts-bar-vertical
+      [view]="view"
+      [results]="monthlyRevenueData"
+      [scheme]="colorScheme"
+      [xAxis]="true"
+      [yAxis]="true"
+      [legend]="true"
+      [showXAxisLabel]="true"
+      [showYAxisLabel]="true"
+      [xAxisLabel]="'Month'"
+      [yAxisLabel]="'Revenue'">
+    </ngx-charts-bar-vertical>
+  </div>
+</div>
+</div>
+
+      <mat-card>
+        <mat-card-title>Top Selling Products</mat-card-title>
+        <mat-progress-spinner *ngIf="isLoading" mode="indeterminate"></mat-progress-spinner>
+        <table mat-table [dataSource]="topSellingProducts" *ngIf="!isLoading">
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Product Name </th>
+            <td mat-cell *matCellDef="let product"> {{product.ProductName}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="quantity">
+            <th mat-header-cell *matHeaderCellDef> Quantity Sold </th>
+            <td mat-cell *matCellDef="let product"> {{product['Sales Quantity']}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="revenue">
+            <th mat-header-cell *matHeaderCellDef> Revenue </th>
+            <td mat-cell *matCellDef="let product"> {{product.Revenue | currency:'INR'}} </td>
+          </ng-container>
+  
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </mat-card>
+
+
+    
+
+
+
+
+
+
+
+

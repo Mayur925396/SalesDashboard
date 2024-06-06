@@ -1,0 +1,26 @@
+<h1 class="alert alert-success text-center">Successfully Logged In!</h1>
+<button mat-icon-button (click)="toggletheme()">
+  <mat-icon>{{ (theme$ | async) === 'dark' ? 'wb_sunny' : 'nights_stay' }}</mat-icon>
+</button>
+
+<div class="d-flex justify-content-evenly">
+
+  <mat-card class="col-4 p-2">
+    <mat-card-title>Dashboard Panel</mat-card-title>
+    <mat-card-content>
+      <p>Click here to go Dashboard Panel </p>
+      <button mat-raised-button color="accent" type="button" routerLink="/dashboard">Dashboard Panel</button>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="col-4 p-2">
+    <mat-card-title>Admin Panel</mat-card-title>
+    <mat-card-content>
+      <p>Welcome to the admin panel.
+        You Are Admin....
+      </p>
+      <button mat-raised-button color="warn" (click)="logout()" type="button">Logout</button>
+    </mat-card-content>
+  </mat-card>
+
+</div>
