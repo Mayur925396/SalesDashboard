@@ -7,3 +7,9 @@ Install [node/npm](https://nodejs.org/en/)
 
 the both server will start concurrently by giving command by dev 'npm start' ;
 i am using node server for backen and firebase for database using feature realtime database for creation of APIs.
+
+for authentication: 
+
+//Admin Login Details:[created Only one admin data]
+login emailId: mayurghadage777@gmail.com
+password: Ghadage@123
